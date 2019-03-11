@@ -1,0 +1,39 @@
+{
+	"name": "typeful-api",
+	"version": "1.0.0",
+	"description": "A set of framework agnostic Typescript abstractions for writing full stack type-safe APIs.",
+	"main": "dist/main.js",
+	"types": "dist/main.d.ts",
+	"scripts": {
+		"test": "mocha -r ts-node/register src/spec/**/*.spec.ts",
+		"build": "tsc",
+		"prepare": "npm run build",
+		"prepublish": "npm test"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Markonis/typeful-api.git"
+	},
+	"keywords": [
+		"Typescript",
+		"API"
+	],
+	"author": "Marko Pavlović <marko@affine.tech>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Markonis/typeful-api/issues"
+	},
+	"homepage": "https://github.com/Markonis/typeful-api#readme",
+	"devDependencies": {
+		"@types/chai": "^4.1.7",
+		"@types/lodash": "^4.14.122",
+		"@types/mocha": "^5.2.6",
+		"chai": "^4.2.0",
+		"mocha": "^6.0.2",
+		"ts-node": "^8.0.3",
+		"typescript": "^3.3.3333"
+	},
+	"dependencies": {
+		"lodash": "^4.17.11"
+	}
+}
