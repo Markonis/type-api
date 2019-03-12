@@ -8,7 +8,7 @@
 		"test": "mocha -r ts-node/register src/spec/**/*.spec.ts",
 		"build": "tsc",
 		"prepare": "npm run build",
-		"prepublish": "npm test"
+		"prepublishOnly": "npm test"
 	},
 	"repository": {
 		"type": "git",
