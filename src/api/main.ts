@@ -5,11 +5,11 @@ export type ApiHandler<TInput, TOutput> =
 
 export interface ApiMounter {
   mountHandler<TInput, TOutput>(
-    endpoint: ApiEnpoint<TInput, TOutput>,
+    endpoint: ApiEndpoint<TInput, TOutput>,
     handler: ApiHandler<TInput, TOutput>): void
 }
 
-export class ApiEnpoint<TInput, TOutput>{
+export class ApiEndpoint<TInput, TOutput>{
   public path: string[] = [];
   public pathStr() { return '/' + this.path.join('/') }
 }

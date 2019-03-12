@@ -1,17 +1,17 @@
-import { setPaths, ApiEnpoint, resolvePath } from '../../api/main';
+import { setPaths, ApiEndpoint, resolvePath } from '../../api/main';
 import { assert } from 'chai';
 
 describe('setPaths', () => {
   const api = {
     parentA: {
-      childP: new ApiEnpoint(),
+      childP: new ApiEndpoint(),
       parentB: {
-        childQ: new ApiEnpoint(),
-        childR: new ApiEnpoint()
+        childQ: new ApiEndpoint(),
+        childR: new ApiEndpoint()
       }
     },
     parentC: {
-      childX: new ApiEnpoint()
+      childX: new ApiEndpoint()
     }
   }
 
